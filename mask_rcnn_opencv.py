@@ -56,9 +56,6 @@ for i in range(detection_count):
 	for cnt in contours:
 		cv2.fillPoly(roi, [cnt], (int(color[0]), int(color[1]), int(color[2])))
 
-	# cv2.imshow("roi", roi)
-	# cv2.waitKey(0)
-
 
 cv2.imshow("Image", img)
 cv2.imshow("Black image", black_image)
